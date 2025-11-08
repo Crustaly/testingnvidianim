@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import './ConversationDetail.css';
 
 function ConversationDetail() {
-  const { matchType, name } = useParams();
+  const { name } = useParams();
 
   // Match data - you can expand this with actual data structure
   const matchData = {
