@@ -1,0 +1,46 @@
+.article-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.transition-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* On mobile, ensure video fills entire screen */
+@media (max-width: 768px) {
+  .article-transition {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+  }
+  
+  .transition-video {
+    width: 100vw;
+    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
+    object-fit: cover;
+  }
+}
+
+/* For horizontal videos on desktop */
+@media (min-width: 769px) {
+  .transition-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+

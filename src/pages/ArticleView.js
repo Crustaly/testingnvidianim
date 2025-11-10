@@ -170,8 +170,8 @@ function ArticleView() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Navigate back to landing page after submission
-    navigate('/');
+    // Navigate to submit transition video, then to landing page
+    navigate('/submit-transition');
   };
 
   const handleSliderChange = (index, value) => {
@@ -189,6 +189,16 @@ function ArticleView() {
         <h1 className="article-title">
           {article.title}
         </h1>
+        <div className="article-meta">
+          <div className="read-time">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="read-time-icon">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+            <span>3 min read</span>
+          </div>
+          <span className="meta-separator">•</span>
+          <span className="article-source">{article.source}</span>
+        </div>
       <div className="article-image">
         <img src={`${process.env.PUBLIC_URL}${article.image}`} alt={article.title} />
       </div>

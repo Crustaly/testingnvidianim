@@ -26,7 +26,7 @@ function ConversationDetail() {
     'Henry Fogel': {
       name: 'Henry Fogel',
       school: 'The University of Pennsylvania',
-      age: 20,
+      age: 18,
       city: 'Philadelphia, Pennsylvania',
       article: 'Free Speech at Risk in America\'s Schools',
       articleTitle: 'Free Speech at Risk in America\'s Schools',
@@ -35,7 +35,8 @@ function ConversationDetail() {
       location: 'La Colombe 100 S',
       address: ['Independence Mall W', 'Philadelphia, PA'],
       date: 'November 15, 2025',
-      time: '2:00 PM (EST)'
+      time: '2:00 PM (EST)',
+      image: 'henryheadshot.jpg'
     }
   };
 

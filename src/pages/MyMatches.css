@@ -76,20 +76,17 @@
   gap: 8px;
 }
 
-.match-name {
+.match-card .match-name {
   font-size: 16px;
   font-weight: 600;
-  color: #000000;
-  background-color: #FFD700;
+  color: #000000 !important;
+  background-color: #FFD700 !important;
   padding: 8px 12px;
   border-radius: 8px;
-  border-bottom: 4px solid #000000;
-  border-right: 4px solid #000000;
-  border-top: none;
-  border-left: none;
   display: inline-block;
   width: fit-content;
   font-family: sans-serif;
+  margin-bottom: 4px;
 }
 
 .match-location {
@@ -102,11 +99,10 @@
 }
 
 .match-location-icon {
-  width: 16px;
-  height: 16px;
-  background-color: #FFD700;
-  border-radius: 50%;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
+  color: #FFD700;
 }
 
 .match-address {

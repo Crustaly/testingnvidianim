@@ -15,7 +15,7 @@ function LandingPage() {
       <div className="button-container">
         <button 
           className="button primary-button"
-          onClick={() => navigate('/article-selection')}
+          onClick={() => navigate('/article-transition')}
         >
           Get Matched
         </button>
